@@ -1,0 +1,11 @@
+import math
+e = math.e
+def expression(x):
+    z = (e ** x) + (x ** 0.5)
+    return z
+x = int(input("Введіть значеня x: "))
+z = expression(x)  
+print("Значеня виразу z =", z)
+z_integer = int(z)  
+sum_digits = sum_of_digits(z_integer)  
+print("Сума цифр числа z =", sum_digits)
